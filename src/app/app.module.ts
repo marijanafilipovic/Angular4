@@ -18,7 +18,7 @@ import { ServicesComponent } from './services/services.component';
 import { HeroListComponent } from './hero-list.component';*/
 
 const appRoutes: Routes = [
-  {path: '', component: AppComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: ServersComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'contact', component: DirectivesComponent}
